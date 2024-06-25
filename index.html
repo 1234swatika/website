@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-white-100">
+  <nav class="p-5 bg-green-200 shadow md:flex md:items-centre md:justify-between">
+  <div class="flex justify-between items-center">
+    <ion-icon name="leaf-outline"></ion-icon>
+    <span class="text-2xl font-[poppins] cursor-pointer">
+          RecipiesForYou
+    </span>
+    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+      <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+    </span>
+  </div>
+  <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+    <li class="mx-4">
+      <a href="home.html" class="text-xl hover:text-red-500 duration-500">HOME</a>
+    </li>
+    <li class="mx-4">
+      <a href="RECIPIES.HTML" class="text-xl hover:text-red-500 duration-500">RECIPIES</a>
+    </li>
+    <li class="mx-4">
+      <a href="about.html" class="text-xl hover:text-red-500 duration-500">ABOUT US</a>
+    </li>
+    <li class="mx-4">
+      <a href="goals.html" class="text-xl hover:text-red-500 duration-500">OUR GOALS</a>
+    </li>
+    <li class="mx-4">
+      <a href="#" class="text-xl hover:text-red-500 duration-500">CONTACTS</a>
+    </li>
+    <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+      Get started
+    </button>
+  </ul>
+</nav>
+<script>
+  function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script>
+<h1 class="font-bold text-center text-5xl" >WELCOME TO THE WORLD OF COOKING</h1>
+<p class="text-center"> RecipiesForYou is a trusted resource for home cooks with more than 3,000 tested recipes, guides, and meal plans, drawing over 15 million readers each month from around the world. We’re supported by a group of recipe developers, food writers, recipe and product testers, photographers, and other creative professionals.</p>
+<div class="container mx-auto px-4 py-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="card rounded-lg shadow-md overflow-hidden">
+      <img class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ65i-nQ7xBm6QPrZUzusd1i1Aw31G1GrbWg&s" alt="ramen image">
+      <div class="p-4">
+        <h3 class="text-lg font-medium text-gray-900">Ramen</h3>
+        <p class="text-gray-700 mb-3">(in Japanese cuisine) quick-cooking noodles, typically served in a broth with meat and vegetables.</p>
+        <a href="https://maruchan.com/recipes?gad_source=1&gclid=Cj0KCQjwsuSzBhCLARIsAIcdLm6tympaiUZQitRj93uuN_wEc6jdveX-e768A6plHxG9IBAK6gK8ztYaAjdCEALw_wcB&gclsrc=aw.ds" class="inline-block px-3 py-1 font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card rounded-lg shadow-md overflow-hidden">
+      <img class="w-full h-48 object-cover" src="https://www.gimmesomeoven.com/wp-content/uploads/2016/01/Miso-Soup-Recipe-9.jpg" alt="Miso Soup Image">
+      <div class="p-4">
+        <h3 class="text-lg font-medium text-gray-900">Miso Soup</h3>
+        <p class="text-gray-700 mb-3">Miso soup is a traditional Japanese soup consisting of a dashi stock into which softened miso paste is mixed. In addition, there are many optional ingredients (various vegetables, tofu, abura-age, etc.) that may be added depending on regional and seasonal recipes, and personal preference.</p>
+        <a href="https://www.allrecipes.com/recipe/13107/miso-soup/" class="inline-block px-3 py-1 font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card rounded-lg shadow-md overflow-hidden">
+      <img class="w-full h-48 object-cover" src="https://www.allrecipes.com/thmb/mvO1mRRH1zTz1SvbwBCTz78CRJI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/67700_RichPastaforthePoorKitchen_ddmfs_4x3_2284-220302ec8328442096df370dede357d7.jpg" alt="Biryani">
+      <div class="p-4">
+        <h3 class="text-lg font-medium text-gray-900">Pasta</h3>
+        <p class="text-gray-700 mb-3">Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking. Pasta was traditionally only made with durum, although the definition has been expanded to include alternatives for a gluten-free diet, such as rice flour, or legumes such as beans or lentils.</p>
+        <a href="https://www.indianhealthyrecipes.com/masala-pasta/" class="inline-block px-3 py-1 font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card rounded-lg shadow-md overflow-hidden">
+      <img class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWkqR087ENNtJpkaDYBJ5iZx7BeaUJXfjzA&s" alt="Biryani image">
+      <div class="p-4">
+        <h3 class="text-lg font-medium text-gray-900">Biryani</h3>
+        <p class="text-gray-700 mb-3">Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat (chicken, goat, pork, lamb, beef, prawn, or fish) and spices. To cater to vegetarians, in some cases, it is prepared by substituting vegetables or paneer for the meat.</p>
+        <a href="https://www.indianhealthyrecipes.com/chicken-biryani-recipe/" class="inline-block px-3 py-1 font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-gray-800 text-gray-300 py-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center">
+          <div>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-twitter"></a>
+            <a href="https://twitter.com/" class="fa fa-instagram"></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
